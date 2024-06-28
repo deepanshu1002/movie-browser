@@ -1,5 +1,5 @@
 import React from "react";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 import Browse from "./components/Browse/Browse";
 import Search from "./components/Search/Search";
 import Body from "./components/Body/Body";
@@ -8,7 +8,7 @@ import store from "./utils/appStore";
 import FavouriteMovies from "./components/FavouriteMovies/FavouriteMovies";
 
 const App = () => {
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: "/",
       element: (
