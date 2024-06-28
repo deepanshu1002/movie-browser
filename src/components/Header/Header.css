@@ -1,0 +1,64 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to bottom, #ff7e5f);
+  height: 100pxpx;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0)
+  ); /* Gradient from solid to transparent */
+  color: black;
+  z-index: 2;
+}
+.logo {
+  width: 60px;
+}
+.title {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.title span {
+  font-size: medium;
+  font-weight: bold;
+  color: white;
+}
+.search button {
+  margin-right: 80px;
+  background-color: rgb(20, 39, 211);
+  border-radius: 5px;
+  padding: 4px 6px 4px 6px;
+  color: white;
+  border: none;
+  font-size: medium;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+.search button:hover {
+  background-color: rgb(103, 182, 235);
+}
+.right-section {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.btn {
+  background-color: red;
+  border-radius: 5px;
+  padding: 4px 6px 4px 6px;
+  color: white;
+  border: none;
+  font-size: medium;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+.btn:hover {
+  background-color: rgb(228, 97, 97);
+}

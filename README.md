@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+INTRODUCTION
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Movie Browser React App is designed to provide users with an engaging interface to explore various movie lists, search for movies, and manage their favorite movies. This documentation outlines the design approach, functionality, and steps to run the application.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+DESIGN APPROACH
 
-### `npm start`
+The application is structured into several key components:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    1. Header: A fixed header that remains consistent throughout the app. It includes navigation buttons for movie search and accessing favorite movies.
+    2. Body Component: The main page is divided into two sections:
+        - Trailer Section: Displays a YouTube trailer video using an iframe, along with movie details on the left.
+        - Movie Lists Section: Contains four scrollable containers showcasing different movie categories (Popular, Top Rated, Now Playing, and Upcoming).
+    3. Search Component: Provides a comprehensive movie search experience with filtering options and infinite scrolling.
+    4. Favourite Movies Component: Displays the user's favorite movies, allowing them to manage their list.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+COMPONENTS OVERVIEW
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Header Component
 
-### `npm run build`
+    Description: The header is a fixed element at the top of the app that includes navigation buttons for movie search and accessing the favorite movies page.
+    Functionalities:
+        Navigation: Includes buttons to navigate between the main page, search component, and favorite movies component.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Body Component
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    Description: The main content of the homepage is divided into two sections.
+        Trailer Section: Embeds a YouTube video using an iframe and displays movie details.
+        Movie Lists Section: Contains four scrollable containers with movie categories (Popular, Top Rated, Now Playing, and Upcoming).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Search Component
 
-### `npm run eject`
+    Description: Allows users to search for movies with various filtering options and displays results.
+    Functionalities:
+        Search Bar: As users type, it shows movie suggestions with debouncing to reduce API calls.
+        Filters: Options to filter movies by genre, ratings, and release date.
+        Movie Container: Scrollable list of movies that changes based on search input and filters. Includes infinite scroll for continuous movie loading.
+        Add to Favourites: Button to add movies to the favorite list.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Favourite Movies Component
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    Description: Displays the user's favorite movies and allows them to manage their list.
+    Functionalities:
+        Remove from Favourites: Option to remove movies from the favorite list.
+        Back Button: Navigation to return to the search page.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+FEATURES
 
-## Learn More
+Main Page
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Trailer Video: Displays an embedded YouTube video with movie details.
+- Movie Lists: Scrollable containers for various movie categories (Popular, Top Rated, Now Playing, Upcoming).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Search Functionality
 
-### Code Splitting
+- Search Bar: Provides real-time movie suggestions with debouncing (0.4 seconds).
+- Filtering Options: Allows users to filter movies by genre, ratings, and release date.
+- Infinite Scroll: Loads more movies as the user scrolls down.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Favourite Movies
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Add to Favourites: Allows users to add movies to their favorite list.
+- View and Manage Favourites: Users can view and remove movies from their favorite list.
+- Navigation: Buttons to switch between the search component and the favorite movies page.

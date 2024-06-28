@@ -1,0 +1,15 @@
+.iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  margin-top: -100px;
+}
+.bg-video-container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0)
+  );
+}

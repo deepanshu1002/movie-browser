@@ -1,0 +1,22 @@
+.movie-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 260px;
+  background-color: chocolate;
+  border-radius: 5px;
+}
+.movie-img {
+  height: 200px;
+  width: 150px;
+  padding: 4px 4px 0 4px;
+}
+
+.movie-card-container h5,
+.movie-card-container h6 {
+  text-align: center;
+  margin: 0;
+  padding-top: 5px;
+  color: white;
+}
